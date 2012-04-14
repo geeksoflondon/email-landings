@@ -62,7 +62,7 @@ h3 {
     font-size: 1em;
 }
 
-a.unsubscribe {
+.unsubscribe a {
 	text-color: red;
 	text-align: center;
 	font-size: 0.75em;
