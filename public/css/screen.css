@@ -54,6 +54,20 @@ h3 {
 	margin-bottom: 0.25em;
 }
 
+.update_button {
+    width: 100%;
+    border: 1px solid #AAA;
+    background-color: #FAFAFA;
+    height: 5em;
+    font-size: 1em;
+}
+
+a.unsubscribe {
+	text-color: red;
+	text-align: center;
+	font-size: 0.75em;
+}
+
 header {
 	background-color: #f9f9f9;
 	border-bottom: 1px solid #d5d5d5;
