@@ -1,0 +1,239 @@
+@import url("reset.css");
+
+body {
+	background-color: #efefef;
+	margin-top: 20px;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.47em;
+}
+
+a {
+	color: #426D70;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+p.info {
+	background-color: #f2f2f2;
+	padding: 10px 20px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+hr {
+	border: 0px;
+	height: 1px;
+	background-color: #dadada;
+	margin-bottom: 20px;
+}
+
+header {
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #d5d5d5;
+	border-top: 1px solid #d5d5d5;
+	padding: 20px 0px;
+}
+
+section {
+	padding: 20px 0px;
+	overflow: auto;
+	background-color: #fff;
+	border-bottom: 1px solid #d5d5d5;
+	padding-bottom: 40px;
+}
+
+section ul {
+  list-style: disc outside;
+  margin-left: 15px;
+}
+
+section aside {
+	float: left;
+	width: 140px;
+	text-align: right;
+}
+
+section aside ul {
+  border-bottom: 1px solid #ddd;
+  list-style: none outside;
+  margin-left: 0px;
+}
+
+section aside li {
+	padding: 5px 3px;
+	border-top: 1px solid #ddd;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+section aside a {
+	text-decoration: none;
+	color: #333;
+}
+
+section aside img {
+  width: 140px;
+}
+
+section aside .active {
+	background-color: #f9f9f9;
+}
+
+section aside .active a {
+	color: #426D70;
+}
+
+section article {
+	margin-bottom: 40px;
+}
+
+section article form {
+  padding: 10px 0px;
+}
+
+section article input {
+  padding: 3px;
+}
+
+section article .events {
+  margin: 10px 0px 0px 0px;
+  list-style: none;
+}
+
+section article .events li {
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+section article img {
+  margin: 0px auto;
+  display: block;
+}
+
+
+section article .events h2 {
+  padding-top: 5px;
+  margin-bottom: 0px;
+  background-color: inherit;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.2em;
+  border-bottom: 0px;
+}
+
+section article .events h2 a {
+  text-decoration: none;
+}
+
+section article .events time {
+  font-size: 12px;
+  color: #444;
+  width: 415px;
+  float: right;
+}
+
+section article .calendar {
+  float: left;
+  background-image: url("/images/calendar_background.png");
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: #426D70;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+}
+
+section article .calendar strong {
+  color: black;
+  display: block;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 14px;
+  margin-top: 19px;
+  margin-bottom: 0px;
+}
+
+section article input[type=text] {
+  border: 1px solid #ddd;
+}
+
+section article h1 {
+	font-size: 30px;
+	line-height: 1.2em;
+	font-weight:bold;
+}
+
+section article h1 a {
+	text-decoration: none;
+}
+
+section article .author {
+	font-size: 13px;
+	color: #444;
+}
+
+code {
+  border:1px dashed #E1E1E1;
+  color:#333344;
+  background:#FAFAFA;
+  font-family:monospace;
+  overflow:auto;
+  font-size:11px;
+  padding:0.5em;
+}
+
+.wrapper {
+	width: 640px;
+	margin: 0px auto;
+}
+
+.pagination {
+	background-color: #fafafa;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding: 3px 5px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.pagination .previous {
+	float: left;
+	text-decoration: none;
+}
+
+.pagination .next {
+	float: right;
+	text-decoration: none;
+}
+
+#sponsors {
+  margin-top: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#sponsors h3 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#sponsors img {
+  margin-bottom: 20px;
+}
+
+footer {
+	background-color: #fafafa;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.8em;
+	padding: 3px 0px;
+}
+
+footer .wrapper {
+	text-align: center;
+}
