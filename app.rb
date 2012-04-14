@@ -20,7 +20,7 @@ post '/update/:email' do
  #Update Campaign Monitor
 end
 
-get '/update/thankyou' do
+get '/thankyou' do
  erb :thankyou
  #Thankyou for updating
 end

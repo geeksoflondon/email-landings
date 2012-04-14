@@ -42,6 +42,12 @@ hr {
 	margin-bottom: 20px;
 }
 
+h1 {
+	font-size: 2.0em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
 h3 {
 	font-size: 1.2em;
 	font-weight: bold;
