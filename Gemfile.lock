@@ -1,24 +1,37 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    addressable (2.2.6)
     createsend (1.0.3)
       hashie (~> 1.0)
       httparty (~> 0.8)
       json
     hashie (1.2.0)
+    heroku (2.9.0)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
     httparty (0.8.2)
       multi_json
       multi_xml
     json (1.6.6)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
+    mime-types (1.16)
     multi_json (1.2.0)
     multi_xml (0.4.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (0.9.4)
     sinatra (1.3.2)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
       tilt (~> 1.3, >= 1.3.3)
+    term-ansicolor (1.0.7)
     tilt (1.3.3)
 
 PLATFORMS
@@ -26,4 +39,5 @@ PLATFORMS
 
 DEPENDENCIES
   createsend
+  heroku
   sinatra
