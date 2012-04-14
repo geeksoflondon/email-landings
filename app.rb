@@ -13,6 +13,7 @@ end
 
 get '/update/:email' do
  #Show subscription settings for the email address
+ erb :update
 end
 
 post '/update/:email' do
@@ -20,5 +21,6 @@ post '/update/:email' do
 end
 
 get '/update/thankyou' do
+ erb :thankyou
  #Thankyou for updating
 end
