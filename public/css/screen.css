@@ -22,11 +22,30 @@ p.info {
 	line-height: 18px;
 }
 
+p.signoff {
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	color: #426D70;
+}
+
+p.frequency {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #426D70;
+}
+
 hr {
 	border: 0px;
 	height: 1px;
 	background-color: #dadada;
 	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 0.25em;
 }
 
 header {
@@ -225,6 +244,16 @@ code {
 
 #sponsors img {
   margin-bottom: 20px;
+}
+
+.interest {
+	padding: 0.5em;
+	margin: 0.25em 0 1em 0;
+	border: solid #DDD 1px;
+}
+
+.odd {
+	background-color: #fafafa;
 }
 
 footer {
