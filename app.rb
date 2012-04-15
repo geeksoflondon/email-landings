@@ -50,11 +50,9 @@ def get_subscriber(email = '')
     'name' => @subscriber.Name,
     'first_name' => safe_field(@subscriber.CustomFields[0]),
     'last_name' => safe_field(@subscriber.CustomFields[1]),
-    'everything' => safe_field(@subscriber.CustomFields[4]),
-    'geek' => safe_field(@subscriber.CustomFields[5]),
-    'hack' => safe_field(@subscriber.CustomFields[6]),
-    'barcamp' => safe_field(@subscriber.CustomFields[7]),
-    'events' => safe_field(@subscriber.CustomFields[8])
+    'anything' => safe_field(@subscriber.CustomFields[4]),
+    'hack' => safe_field(@subscriber.CustomFields[5]),
+    'barcamp' => safe_field(@subscriber.CustomFields[6])
   }
 
   return user

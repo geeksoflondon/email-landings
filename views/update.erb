@@ -21,11 +21,6 @@
 	                <p class="signoff">Your Geeks of London Team</p>
 	            </div>
 	            <hr>
-	            <div class="interest">
-	                <h3>Everything</h3>
-	                <p>You will receive emails about every event we run and some about events we are attending.</p>
-	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="everything" <%= @subscription['everything'] %>>
-	            </div>
 	            <div class="interest odd">
 	                <h3>BarCamp</h3>
 	                <p>You will receive emails about BarCamp type events including announcements, ticket releases etc.</p>
@@ -33,13 +28,13 @@
 	            </div>
 	            <div class="interest">
 	                <h3>Hack Days</h3>
-	                <p>You will receive emails about HackDay type events including announcements, ticket releases etc.</p>
+	                <p>You will receive emails about Hack Day type events including announcements, ticket releases etc.</p>
 	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="hack" <%= @subscription['hack'] %>>               
 	            </div>
 	            <div class="interest odd">
-	                <h3>Other Events</h3>
-	                <p>You will receive emails about other events we are running in the evenings or for just one day</p>
-	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="geek" <%= @subscription['geek'] %>>
+	                <h3>Anything Else</h3>
+	                <p>You will receive emails about other events we are running, involved in or attending.</p>
+	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="geek" <%= @subscription['anything'] %>>
 	            </div>
 	            <hr>
 	            <div class='content'>
