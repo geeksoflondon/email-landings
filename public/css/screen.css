@@ -1,57 +1,57 @@
 @import url("reset.css");
 
 body {
-	background-color: #efefef;
-	margin-top: 20px;
-	font-family: 'Lato', sans-serif;
-	line-height: 1.47em;
+    background-color: #efefef;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.47em;
 }
 
 a {
-	color: #426D70;
+    color: #426D70;
 }
 
 p {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 p.info {
-	background-color: #f2f2f2;
-	padding: 10px 20px;
-	font-size: 13px;
-	line-height: 18px;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 18px;
 }
 
 p.signoff {
-	font-weight: bold;
-	font-style: italic;
-	text-decoration: underline;
-	color: #426D70;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: #426D70;
 }
 
 p.frequency {
-	font-size: 0.8em;
-	font-style: italic;
-	color: #426D70;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #426D70;
 }
 
 hr {
-	border: 0px;
-	height: 1px;
-	background-color: #dadada;
-	margin-bottom: 20px;
+    border: 0px;
+    height: 1px;
+    background-color: #dadada;
+    margin-bottom: 20px;
 }
 
 h1 {
-	font-size: 2.0em;
-	font-weight: bold;
-	margin-bottom: 0.5em;
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 h3 {
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-bottom: 0.25em;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.25em;
 }
 
 .update_button {
@@ -59,28 +59,52 @@ h3 {
     border: 1px solid #AAA;
     background-color: #FAFAFA;
     height: 5em;
-    font-size: 1em;
+    font-size: 1.0em;
+	font-weight: bold;
+	color: #ffffff;
+	
+    background-image: linear-gradient(bottom, rgb(66,109,112) 44%, rgb(127,201,170) 100%, rgb(88,184,149) 86%);
+    background-image: -o-linear-gradient(bottom, rgb(66,109,112) 44%, rgb(127,201,170) 100%, rgb(88,184,149) 86%);
+    background-image: -moz-linear-gradient(bottom, rgb(66,109,112) 44%, rgb(127,201,170) 100%, rgb(88,184,149) 86%);
+    background-image: -webkit-linear-gradient(bottom, rgb(66,109,112) 44%, rgb(127,201,170) 100%, rgb(88,184,149) 86%);
+    background-image: -ms-linear-gradient(bottom, rgb(66,109,112) 44%, rgb(127,201,170) 100%, rgb(88,184,149) 86%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.44, rgb(66,109,112)),
+        color-stop(1, rgb(127,201,170)),
+        color-stop(0.86, rgb(88,184,149))
+    );
+
+    -moz-border-radius: 15px;
+    border-radius: 15px;
 }
 
-.unsubscribe a {
-	text-color: red;
-	text-align: center;
-	font-size: 0.75em;
+.unsubscribe {
+	margin: 1em 0 0 0;
+    text-align: center;
+}
+
+a.unsubscribe {
+    color: red;
+    font-size: 0.75em;
 }
 
 header {
-	background-color: #f9f9f9;
-	border-bottom: 1px solid #d5d5d5;
-	border-top: 1px solid #d5d5d5;
-	padding: 20px 0px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #d5d5d5;
+    border-top: 1px solid #d5d5d5;
+    padding: 20px 0px;
 }
 
 section {
-	padding: 20px 0px;
-	overflow: auto;
-	background-color: #fff;
-	border-bottom: 1px solid #d5d5d5;
-	padding-bottom: 40px;
+    padding: 20px 0px;
+    overflow: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 40px;
 }
 
 section ul {
@@ -89,9 +113,9 @@ section ul {
 }
 
 section aside {
-	float: left;
-	width: 140px;
-	text-align: right;
+    float: left;
+    width: 140px;
+    text-align: right;
 }
 
 section aside ul {
@@ -101,15 +125,15 @@ section aside ul {
 }
 
 section aside li {
-	padding: 5px 3px;
-	border-top: 1px solid #ddd;
-	font-size: 15px;
-	font-weight: bold;
+    padding: 5px 3px;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 section aside a {
-	text-decoration: none;
-	color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 section aside img {
@@ -117,15 +141,15 @@ section aside img {
 }
 
 section aside .active {
-	background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 section aside .active a {
-	color: #426D70;
+    color: #426D70;
 }
 
 section article {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 section article form {
@@ -202,18 +226,18 @@ section article input[type=text] {
 }
 
 section article h1 {
-	font-size: 30px;
-	line-height: 1.2em;
-	font-weight:bold;
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight:bold;
 }
 
 section article h1 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 section article .author {
-	font-size: 13px;
-	color: #444;
+    font-size: 13px;
+    color: #444;
 }
 
 code {
@@ -227,27 +251,27 @@ code {
 }
 
 .wrapper {
-	width: 640px;
-	margin: 0px auto;
+    width: 640px;
+    margin: 0px auto;
 }
 
 .pagination {
-	background-color: #fafafa;
-	border-bottom: 1px solid #ddd;
-	border-top: 1px solid #ddd;
-	padding: 3px 5px;
-	text-align: center;
-	font-size: 13px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 13px;
 }
 
 .pagination .previous {
-	float: left;
-	text-decoration: none;
+    float: left;
+    text-decoration: none;
 }
 
 .pagination .next {
-	float: right;
-	text-decoration: none;
+    float: right;
+    text-decoration: none;
 }
 
 #sponsors {
@@ -267,22 +291,22 @@ code {
 }
 
 .interest {
-	padding: 0.5em;
-	margin: 0.25em 0 1em 0;
-	border: solid #DDD 1px;
+    padding: 0.5em;
+    margin: 0.25em 0 1em 0;
+    border: solid #DDD 1px;
 }
 
 .odd {
-	background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 footer {
-	background-color: #fafafa;
-	border-bottom: 1px solid #ddd;
-	font-size: 0.8em;
-	padding: 3px 0px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.8em;
+    padding: 3px 0px;
 }
 
 footer .wrapper {
-	text-align: center;
+    text-align: center;
 }
