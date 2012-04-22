@@ -2,8 +2,12 @@ require 'rubygems'
 require 'sinatra'
 require 'createsend'
 
+##Some Config
+
 API_KEY = ENV['CM_KEY']
 LIST_ID = '471955e41d63929cf0205d40334aac59'
+
+##HTTP Methods
 
 get '/' do
   erb :index
@@ -26,21 +30,35 @@ get '/update/:email' do
 end
 
 post '/update/:email' do
- puts params.inspect
+ email = params[:email]
+ barcamp = params[:barcamp]
+ hack = params[:hack]
+ anything = params[:anything]
+
+ custom_fields = [{:Key => 'barcamp', :Value => clean_choice(barcamp)}, {:Key => 'hack', :Value => clean_choice(hack)}, {:Key => 'anything', :Value => clean_choice(anything)}]
+ puts custom_fields.inspect
+ subscription = get_subscriber(email)
+ update = update_subscriber(subscription['email'], subscription['name'], custom_fields)
+
+ redirect '/thankyou'
 end
 
 get '/thankyou' do
  erb :thankyou
- #Thankyou for updating
 end
+
+get '/unsubscribe/:email' do
+ unsubscribe_subscriber(params[:email])
+ erb :unsubscribe
+end
+
+##CM Methods
 
 def get_subscriber(email = '')
 
   begin
-
     CreateSend.api_key API_KEY
     @subscriber = CreateSend::Subscriber.get LIST_ID, email
-
   rescue Exception=>e
     return nil
   end
@@ -59,6 +77,36 @@ def get_subscriber(email = '')
 
 end
 
+def update_subscriber(email = '', name  = '',  custom_fields = '')
+
+  begin
+    CreateSend.api_key API_KEY
+    @subscriber = CreateSend::Subscriber.new LIST_ID, email
+    email_address = @subscriber.update email, name, custom_fields, true
+  rescue Exception=>e
+    return e
+  end
+
+  return email_address
+
+end
+
+def unsubscribe_subscriber(email = '')
+
+  begin
+    CreateSend.api_key API_KEY
+    @subscriber = CreateSend::Subscriber.new LIST_ID, email
+    unsubscribe = @subscriber.unsubscribe()
+  rescue Exception=>e
+    return e
+  end
+
+  return email
+
+end
+
+##Helpers
+
 def safe_field(field = '')
   unless field.nil?
     if field['Value'] == 'TRUE'
@@ -68,5 +116,13 @@ def safe_field(field = '')
     end
   else
     return ''
+  end
+end
+
+def clean_choice(value = '')
+  if value == nil
+    return 'FALSE'
+  else
+    return 'TRUE'
   end
 end

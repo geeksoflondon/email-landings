@@ -34,7 +34,7 @@
 	            <div class="interest odd">
 	                <h3>Anything Else</h3>
 	                <p>You will receive emails about other events we are running, involved in or attending.</p>
-	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="geek" <%= @subscription['anything'] %>>
+	                Yes I want to receive these: <input type="checkbox" value="TRUE" name="anything" <%= @subscription['anything'] %>>
 	            </div>
 	            <hr>
 	            <div class='content'>
@@ -51,7 +51,7 @@
 	            <hr>
 	            <input type="submit" value="Update my details" class="update_button" />
 	            <div class="unsubscribe">
-	                <a href="#" class="unsubscribe">I have had enough emails and I want to cancel everything.</a>
+	                <a href="/unsubscribe/<%= @subscription['email'] %>" class="unsubscribe">I have had enough emails and I want to cancel everything.</a>
 	            </div>
 			</form>
         </div>
